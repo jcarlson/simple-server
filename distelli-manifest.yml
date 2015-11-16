@@ -31,4 +31,5 @@ jcarlson/FooBarApp:
   Exec:
     #- source ~/.rvm/scripts/rvm
     #- rvm use 1.9.3
-    - ./bundle/bin/rack -p $PORT -e $STAGE
+    - bundle install
+    - ./bundle/bin/rack
