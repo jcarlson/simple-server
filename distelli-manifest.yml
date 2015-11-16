@@ -16,6 +16,11 @@ jcarlson/FooBarApp:
     - rvm use 2.1.4
     - gem install bundle
 
+  PostInstall:
+    - source ~/.rvm/scripts/rvm
+    - rvm use 2.1.4
+    - bundle install --binstubs $DISTELLI_APPHOME/bundle/bin --standalone --path $DISTELLI_APPHOME/bundle/lib
+
   Exec:
     - source ~/.rvm/scripts/rvm
     - rvm use 2.1.4
