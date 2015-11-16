@@ -24,4 +24,4 @@ jcarlson/FooBarApp:
   Exec:
     - source ~/.rvm/scripts/rvm
     - rvm use 2.1.4
-    - ./bundle/bin/rackup
+    - ./bundle/bin/rackup -o 0.0.0.0 -p 3000
